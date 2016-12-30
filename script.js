@@ -16,5 +16,5 @@ $( document ).ready(function() {
 	$('#skill-vba').progress();
 	$('#skill-photoshop').progress();
 
-
 });
+

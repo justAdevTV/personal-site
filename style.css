@@ -19,6 +19,19 @@
 	font-size: 5rem;
 }
 
+@media only screen and (max-width: 500px) {
+   .header-hello-large-text {
+	margin-top: 75px !important;
+	margin-bottom: 0px !important;
+	font-size: 3.5rem;
+	}
+
+	.header-name-large-text {
+		margin-top: -10px !important;
+		font-size: 1.8rem;
+	} 
+}
+
 .section-header {
 	font-size: 4.3rem;
 	margin-bottom: 45px;
