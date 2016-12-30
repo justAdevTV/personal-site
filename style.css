@@ -34,3 +34,7 @@
 	font-size: 3rem;
 }
 
+.no-center {
+	text-align: left !important;
+}
+
