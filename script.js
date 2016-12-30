@@ -16,5 +16,21 @@ $( document ).ready(function() {
 	$('#skill-vba').progress();
 	$('#skill-photoshop').progress();
 
+	// Activities Card Shake
+	$('#card-robot')
+	  .visibility({
+	    onTopVisible: function(calculations) {
+	    	$('#card-robot').transition('tada');
+	    	$('#card-web').transition('tada');
+			$('#card-hack').transition('tada');
+	    },
+	    onTopPassed: function(calculations) {
+	      // top of element passed
+	    },
+	    onUpdate: function(calculations) {
+	      // do something whenever calculations adjust
+	      
+	    }
+	});
 });
 
