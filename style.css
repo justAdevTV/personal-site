@@ -46,3 +46,21 @@
 	text-align: left !important;
 }
 
+.no-bottom-padding-margin {
+	margin-bottom: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+.no-top-padding-margin {
+	margin-top: 0px !important;
+	padding-top: 0px !important;
+}
+
+.footer-background {
+	background: #2d49a2 !important;
+}
+
+.footer-text {
+	font-size: 1.2rem !important;
+	color: white !important;
+}
