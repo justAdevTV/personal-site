@@ -4,10 +4,12 @@
 }
 
 .header-holder {
-	margin-top: 80px !important;
+	margin-top: 17px !important;
+	//margin-bottom: 275px !important;
 }
 
 .header-hello-large-text {
+	margin-top: 75px !important;
 	margin-bottom: 0px !important;
 	font-size: 11.5rem;
 }
@@ -32,6 +34,12 @@
 
 .contact-header {
 	font-size: 3rem;
+}
+
+.lower-button {
+
+	margin-top: 190px !important;
+
 }
 
 .no-center {

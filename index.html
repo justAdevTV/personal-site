@@ -1,59 +1,134 @@
-<head>
-	<script
-	src="https://code.jquery.com/jquery-3.1.1.min.js"
-	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-	crossorigin="anonymous"></script>
+	<head>
+		<script
+		src="https://code.jquery.com/jquery-3.1.1.min.js"
+		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" type="text/css" href="animate.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="semantic.css">
-	<link rel="stylesheet" type="text/css" href="semantic.min.css">
-	
-	<script
-	src="https://code.jquery.com/jquery-3.1.1.min.js"
-	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-	crossorigin="anonymous"></script>
-
-	<script src="semantic.min.js"></script>
-</head>
-
-<body>
-	
-	<!-- Header -->
-	<section class="ui center aligned segment header-holder no-border-view fadeInDown animated">
-
-		<h1 class="header-hello-large-text">Hello I'm</h1>
-		<h1 class="header-name-large-text">Justin Punzalan.</h1>
-
-
-		<h3>Frontend Web Developer / Sofware Engineer</h3>
-		<p><a href="#resume">My Resume</a></p>
+		<link rel="stylesheet" type="text/css" href="animate.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="semantic.css">
+		<link rel="stylesheet" type="text/css" href="semantic.min.css">
 		
+		<script
+		src="https://code.jquery.com/jquery-3.1.1.min.js"
+		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		crossorigin="anonymous"></script>
 
-	</section>
+		<script src="semantic.min.js"></script>
+		<script src="script.js"></script>
+	</head>
 
-	<!-- Who I Am -->
-	<section class="ui center aligned segment no-border-view temp-background fadeInDown animated">
+	<body>
+		
+		<!-- Header -->
+		<section class="ui center aligned segment header-holder no-border-view fadeInDown animated">
 
-		<h1 class="section-header">Who I Am</h1>
+			<h1 class="header-hello-large-text">Hello I'm</h1>
+			<h1 class="header-name-large-text">Justin Punzalan.</h1>
 
-		<div class="ui equal width grid container">
-			<div class="column">
-				<img class="ui medium circular image centered" src="http://lorempixel.com/output/city-q-c-620-620-8.jpg">
-				<h1>Robotics Mentor</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div>
-			<div class="column">
-				<img class="ui medium circular image centered" src="http://lorempixel.com/output/city-q-c-620-620-8.jpg">
-				<h1>Front End Web Developer</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div>
-			<div class="column">
-				<img class="ui medium circular image centered" src="http://lorempixel.com/output/city-q-c-620-620-8.jpg">
-				<h1>Hackathon Winner</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+			<h3>Frontend Web Developer / Sofware Engineer</h3>
+			<p><a class="scroll" target="resume">My Resume</a></p>
+			
+			<a class="lower-button scroll" target="who-am-i"><i class="huge double angle down icon lower-button"></i></a>
+			
+
+		</section>
+
+		<!-- Who I Am -->
+		<section id="who-am-i" class="ui center aligned segment no-border-view temp-background fadeInDown animated">
+
+			<h1 class="section-header">Fun Facts</h1>
+
+			<div class="ui equal width grid container">
+				<div class="column">
+					<div class="ui link cards">	
+						<div class="card">
+							<div class="image">
+								<img src="http://www.freevectors.net/files/large/FlatBlueRobotVectorIllustration.jpg">
+							</div>
+							<div class="content ui left aligned">
+								<div class="header">FIRST Robotics Mentor</div>
+								<div class="meta">
+									<a>Team 4 ELEMENT</a>
+								</div>
+								<div class="description">
+									Designed a programming curriculum to teach programming to interested high school students. Implemented PID Control Loops, Vision Tracking and Motion Profiling.
+								</div>
+							</div>
+							<div class="extra content">
+								<span class="right floated">
+									Joined in 2015
+								</span>
+								<span>
+									<i class="marker icon"></i>
+									Van Nuys
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="ui link cards">	
+						<div class="card">
+							<div class="image">
+								<img src="http://cache2.asset-cache.net/xc/485116622.jpg?v=2&c=IWSAsset&k=2&d=fe6KlDvUxA5-joS8vpa38aqSEHc4JacgMc10qdqFSaWfK1xtetUT_yUyEanznjHD0" height="120%">
+							</div>
+							<div class="content ui left aligned">
+								<div class="header">Web Developer</div>
+								<div class="meta">
+									<span class="date">Recent - TakeSessions</span>
+								</div>
+								<div class="description">
+									Designed a programming curriculum to teach programming to interested high school students. Implemented PID Control Loops, Vision Tracking and Motion Profiling.
+								</div>
+							</div>
+							<div class="extra content">
+								<span class="right floated">
+									Started in 2015
+								</span>
+								<span>
+									<i class="user icon"></i>
+									Front End
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="ui link cards">	
+						<div class="card">
+							<div class="image">
+								<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/mlh-profile_image-8393427ef5db952e-300x300.png">
+							</div>
+							<div class="content ui left aligned">
+								<div class="header">Frequent Hackathon Attendee</div>
+								<div class="meta">
+									<a>7 Hackathons Attended</a>
+								</div>
+								<div class="description">
+									Designed a programming curriculum to teach programming to interested high school students. Implemented PID Control Loops, Vision Tracking and Motion Profiling.
+								</div>
+							</div>
+							<div class="extra content">
+								<span class="right floated">
+									Competing since 2015
+								</span>
+								<span>
+									<i class="trophy icon"></i>
+									3 Awards
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+
+		<br>
+		<br>
 
 	</section>
 
@@ -64,7 +139,7 @@
 
 		<div class="ui equal width grid container">
 			<div class="column">
-				
+
 				<!-- HTML -->
 				<div class="ui grid">
 					<div class="four wide column">
@@ -188,7 +263,7 @@
 	</section>
 
 	<!-- Resume/Contact -->
-	<section class="ui center aligned segment no-border-view">
+	<section id="resume" class="ui center aligned segment no-border-view">
 		<div class="ui equal width grid">
 			<div class="column teal">
 				<h1 class="contact-header">Resume</h1>
@@ -223,7 +298,7 @@
 
 	<!-- Footer -->
 	<footer>
-		
+
 	</footer>
 
 </body>
