@@ -1,0 +1,27 @@
+.no-border-view {
+	box-shadow: 0 0 0 0 !important;
+	border: 0px !important;
+}
+
+.header-holder {
+	margin-top: 80px !important;
+}
+
+.header-hello-large-text {
+	margin-bottom: 0px !important;
+	font-size: 11.5rem;
+}
+
+.header-name-large-text {
+	margin-top: -10px !important;
+	font-size: 5rem;
+}
+
+.section-header {
+	font-size: 4.3rem;
+	margin-bottom: 45px;
+}
+
+.temp-background {
+	background: #ecf0f1 !important;
+}
