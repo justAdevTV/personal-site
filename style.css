@@ -1,6 +1,8 @@
 .no-border-view {
-	box-shadow: 0 0 0 0 !important;
+	//box-shadow: 0 0 0 0 !important;
 	border: 0px !important;
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
 }
 
 .header-holder {
@@ -42,7 +44,13 @@
 }
 
 .bio-text {
-	font-size: 2rem;
+	font-size: 1.75rem;
+}
+
+@media only screen and (max-width: 500px) {
+   .bio-text {
+		font-size: 1.4rem;
+	}
 }
 
 .contact-header {
@@ -76,4 +84,17 @@
 .footer-text {
 	font-size: 1.2rem !important;
 	color: white !important;
+}
+
+@media only screen and (max-width: 500px) {
+   .no-padding-mobile {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+}
+
+@media only screen and (max-width: 500px) {
+   .resume-text-padding {
+		padding-left: 0px !important;
+	    padding-right: 0px !important;
+	}
 }
