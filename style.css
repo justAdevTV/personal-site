@@ -6,7 +6,7 @@
 }
 
 .header-holder {
-	margin-top: 17px !important;
+	margin-top: 8px !important;
 	//height: 97vh;
 }
 
@@ -20,6 +20,14 @@
 .header-name-large-text {
 	margin-top: -10px !important;
 	font-size: 5rem;
+}
+
+.header-description-text {
+	font-size: 1.5rem;
+}
+
+.header-list-text a {
+	font-size: 1.35rem !important;
 }
 
 @media only screen and (max-width: 500px) {
