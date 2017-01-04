@@ -1,0 +1,109 @@
+.no-border-view {
+	//box-shadow: 0 0 0 0 !important;
+	border: 0px !important;
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+}
+
+.header-holder {
+	margin-top: 8px !important;
+	//height: 97vh;
+}
+
+.header-hello-large-text {
+	margin-top: 75px !important;
+	margin-bottom: 0px !important;
+	font-size: 11.5rem;
+	letter-spacing: 3px;
+}
+
+.header-name-large-text {
+	margin-top: -10px !important;
+	font-size: 5rem;
+}
+
+.header-description-text {
+	font-size: 1.5rem;
+}
+
+.header-list-text a {
+	font-size: 1.35rem !important;
+}
+
+@media only screen and (max-width: 500px) {
+   .header-hello-large-text {
+	margin-top: 75px !important;
+	margin-bottom: 0px !important;
+	font-size: 3.5rem;
+	}
+
+	.header-name-large-text {
+		margin-top: -10px !important;
+		font-size: 1.8rem;
+	} 
+}
+
+.section-header {
+	font-size: 4.3rem;
+	margin-bottom: 45px;
+}
+
+.temp-background {
+	background: #ecf0f1 !important;
+}
+
+.bio-text {
+	font-size: 1.65rem;
+}
+
+@media only screen and (max-width: 500px) {
+   .bio-text {
+		font-size: 1.4rem;
+	}
+}
+
+.contact-header {
+	font-size: 3rem;
+}
+
+.lower-button {
+
+	margin-top: 190px !important;
+
+}
+
+.no-center {
+	text-align: left !important;
+}
+
+.no-bottom-padding-margin {
+	margin-bottom: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+.no-top-padding-margin {
+	margin-top: 0px !important;
+	padding-top: 0px !important;
+}
+
+.footer-background {
+	background: #ecf0f1 !important;
+}
+
+.footer-text {
+	font-size: 1.2rem !important;
+	color: black !important;
+}
+
+@media only screen and (max-width: 500px) {
+   .no-padding-mobile {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+}
+
+@media only screen and (max-width: 500px) {
+   .resume-text-padding {
+		padding-left: 0px !important;
+	    padding-right: 0px !important;
+	}
+}
