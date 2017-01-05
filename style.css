@@ -13,7 +13,7 @@
 .header-hello-large-text {
 	margin-top: 75px !important;
 	margin-bottom: 0px !important;
-	font-size: 11.5rem;
+	font-size: 9rem;
 	letter-spacing: 3px;
 }
 
@@ -24,10 +24,17 @@
 
 .header-description-text {
 	font-size: 1.5rem;
+	font-weight: 100;
+	color: grey !important;
 }
 
 .header-list-text a {
-	font-size: 1.35rem !important;
+	color: #424242 !important;
+	font-size: 2rem !important;
+}
+
+a:hover { 
+    color: grey !important;
 }
 
 @media only screen and (max-width: 500px) {
