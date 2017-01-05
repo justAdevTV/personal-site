@@ -2,6 +2,19 @@ var isSubmitted = false;
 
 $( document ).ready(function() {
 
+	$('.side-nav-bar.sidebar').sidebar({
+		onChange: function(){
+			$('#sticky').transition('fade');
+		},
+		scrollLock: true,
+		transition: 'overlay'
+	});
+
+	$('.ui.sticky').sticky({
+		offset: 50,
+		context: '#footer'
+	});
+
 	$('.ui.button.toggle').state({
     	text: {
         	inactive : 'Submit',
@@ -91,4 +104,6 @@ function validateEmail(email) {
     return re.test(email);
 }
 
-
+function toggleSideNav(){
+	$('.ui.labeled.icon.sidebar').sidebar('toggle');
+}
