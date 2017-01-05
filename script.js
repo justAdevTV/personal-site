@@ -7,6 +7,9 @@ $( document ).ready(function() {
 
 	   	if ($(this).attr('target') === 'resume') {
 	        $('#field-name').focus();
+	        setTimeout(function(){
+		        $('#field-name').transition('tada');
+	        }, 500)
 	    }
 	});
 
