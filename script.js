@@ -5,17 +5,6 @@ $( document ).ready(function() {
 	    }, 1000);
 	});
 
-	// Trigger for skills
-
-	$('#skill-html').progress();
-	$('#skill-css').progress();
-	$('#skill-js').progress();
-	$('#skill-emberjs').progress();
-	$('#skill-java').progress();
-	$('#skill-linux').progress();
-	$('#skill-vba').progress();
-	$('#skill-photoshop').progress();
-
 	// Activities Card Shake
 	$('#card-robot')
 	  .visibility({
@@ -25,11 +14,29 @@ $( document ).ready(function() {
 			$('#card-hack').transition('tada');
 	    },
 	    onTopPassed: function(calculations) {
-	      // top of element passed
+	      	// Trigger for skills
+
+			$('#skill-html').progress();
+			$('#skill-css').progress();
+			$('#skill-js').progress();
+			$('#skill-emberjs').progress();
+			$('#skill-java').progress();
+			$('#skill-linux').progress();
+			$('#skill-vba').progress();
+			$('#skill-photoshop').progress();
+
+			setTimeout(function(){
+				$('#skill-html').progress('remove active');
+				$('#skill-css').progress('remove active');
+				$('#skill-js').progress('remove active');
+				$('#skill-emberjs').progress('remove active');
+				$('#skill-java').progress('remove active');
+				$('#skill-linux').progress('remove active');
+				$('#skill-vba').progress('remove active');
+				$('#skill-photoshop').progress('remove active');
+			}, 2000);
 	    },
 	    onUpdate: function(calculations) {
-	      // do something whenever calculations adjust
-	      
 	    }
 	});
 });
