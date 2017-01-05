@@ -1,4 +1,14 @@
+var isSubmitted = false;
+
 $( document ).ready(function() {
+
+	$('.ui.button.toggle').state({
+    	text: {
+        	inactive : 'Submit',
+        	active   : 'Submitted'
+      	}
+    });
+
     $('.scroll').click(function() {
 	    $('body').animate({
 	        scrollTop: eval($('#' + $(this).attr('target')).offset().top)
@@ -48,4 +58,37 @@ $( document ).ready(function() {
 	    }
 	});
 });
+
+function toggleButton() {
+	
+	var formData = $('form').serializeArray();
+
+	if (isSubmitted) {
+		$('#field-name-div').removeClass('disabled');
+	    $('#field-email-div').removeClass('disabled');
+	    $('#field-message-div').removeClass('disabled');
+
+	    isSubmitted = false;
+
+	} else if (formData[0].value != '' && (validateEmail(formData[1].value)) && formData[2].value != '') {
+		
+ 		$('#field-name-div').addClass('disabled');
+	    $('#field-email-div').addClass('disabled');
+	    $('#field-message-div').addClass('disabled');
+
+		isSubmitted = true;
+
+	}	
+
+	setTimeout(function(){
+		$(':input').val('');
+	}, 1);
+
+}
+
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+
 

@@ -308,23 +308,23 @@
 			<div class="column grey" id="contact">
 				<h1 class="contact-header">Contact Me</h1>
 				<br>
-				<form class="ui form" method="POST" action="https://formspree.io/justpunz@live.com">
+				<form class="ui form" method="POST" action="https://formspree.io/justpunz@live.com" target="_blank">
 					<div class="no-center">
-						<div class="ui fluid big icon input field">
-						  <input id="field-name" type="text" placeholder="Your Name" required>
+						<div class="ui fluid big icon input field" id="field-name-div">
+						  <input id="field-name" type="text" name="name" placeholder="Your Name" required>
 						  <i class="student icon"></i>
 						</div>
-						<div class="ui fluid big icon input field">
+						<div class="ui fluid big icon input field" id="field-email-div">
 						  <input type="email" name="email" placeholder="Your email" required>
 						  <i class="mail icon"></i>
 						</div>
-						<div class="ui fluid big icon input field">
+						<div class="ui fluid big icon input field" id="field-message-div">
 							<i class="write icon"></i>
 							<textarea rows="2" name="message" placeholder="Your message." required></textarea>
 						</div>
 					</div>
 					<br>
-					<button class="ui button large" type="submit">Submit</button>
+					<button class="ui toggle button large" type="submit" onclick="toggleButton()">Submit</button>
 				</form>
 			</div>
 		</div>
