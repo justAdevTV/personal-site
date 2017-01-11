@@ -2,6 +2,8 @@ var isSubmitted = false;
 
 $( document ).ready(function() {
 
+	alert('Under Construction!');
+
 	$('.side-nav-bar.sidebar').sidebar({
 		onChange: function(){
 			$('#sticky').transition('fade');
