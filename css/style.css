@@ -2,6 +2,23 @@
 	margin-left: 2%;
 }
 
+.awards-holder {
+	margin-top: 35px;
+}
+
+.award-header {
+	font-size: 3rem;
+}
+
+.award-background {
+	background: #ffe1e1 !important;
+}
+
+.award-holder{
+	padding-top: 20px !important;
+	padding-bottom: 50px !important;
+}
+
 .no-border-view {
 	//box-shadow: 0 0 0 0 !important;
 	border: 0px !important;
