@@ -9,7 +9,16 @@
 	margin-top: 0px !important;
 }
 
+.header-text {
+	font-size: 4.25rem;
+}
+
 .header-holder {
+	padding-top: 10px;
+	padding-bottom: 19px;
+}
+
+.header-home-holder {
 	margin-top: 8px !important;
 	//height: 97vh;
 }
