@@ -25,70 +25,100 @@
 
 <body>
 
-	<!-- Header -->
-	<section class="header-holder award-background">
-		<div class="ui grid container">
-		  <div class="sixteen wide column">
-		  	<h1 class="header-text">Awards</h1>
+	<div class="ui left vertical inverted sidebar labeled icon menu side-nav-bar">
+	  <a class="item" href="index.html">
+	    <i class="home icon"></i>
+	    Home
+	  </a>
+	  <a class="item" href="projects.html">
+	    <i class="block layout icon"></i>
+	    Projects
+	  </a>
+	  <a class="item active">
+	    <i class="trophy icon"></i>
+	    Awards
+	  </a>
+	  <a class="item" href="about.html">
+	    <i class="info icon"></i>
+	    About
+	  </a>
+	</div>
+
+	<div class="ui sticky nav-margin" id="sticky">
+		<div class="ui animated large button black" tabindex="0" onclick="toggleSideNav()">
+		  <div class="hidden content">Menu</div>
+		  <div class="visible content">
+		   <i class="content icon"></i>
 		  </div>
-		</div>	
-	</section>
-
-	<!-- Awards -->
-	<section class="awards-holder">
-		<!-- Valley Econ -->
-		<div class="ui equal width grid stackable container award-holder">
-			<div class="twelve wide column">
-				<h1 class="award-header">First Place | Valley Hackathon Winner</h1>
-				<h2>The Valley Economic Alliance</h2>
-				<p>Created a responsive landing page that encourages people to set up their businesses in the San Fernando Valley.</p>
-			</div>
-			<div class="column four wide right aligned">
-				<h1 class="award-header">November 2015</h1>
-			</div>
 		</div>
+	</div>
 
-		<!-- Google -->
-		<div class="temp-background">
+	<div class="pusher">
+		<!-- Header -->
+		<section class="header-holder award-background">
+			<div class="ui grid container">
+			  <div class="sixteen wide column">
+			  	<h1 class="header-text">Awards</h1>
+			  </div>
+			</div>	
+		</section>
+
+		<!-- Awards -->
+		<section class="awards-holder">
+			<!-- Valley Econ -->
 			<div class="ui equal width grid stackable container award-holder">
 				<div class="twelve wide column">
-					<h1 class="award-header">Most Dedicated & Youngest Programmer</h1>
-					<h2>Karl Mehta - CEO of EdCast | Google Hackathon</h2>
-					<p>Created a simple SMS/Web application that helps prevent malnourishment and starvation in India.
-					Used medical information to add specific fruits and vegetables to their diet in order to combat malnourishment. Used historical data provided by teachers to predict attendance at school.</p>
+					<h1 class="award-header">First Place | Valley Hackathon Winner</h1>
+					<h2>The Valley Economic Alliance</h2>
+					<p>Created a responsive landing page that encourages people to set up their businesses in the San Fernando Valley.</p>
 				</div>
 				<div class="column four wide right aligned">
-					<h1 class="award-header">August 2015</h1>
+					<h1 class="award-header">November 2015</h1>
 				</div>
 			</div>
-		</div>
 
-		<!-- Design Thinker -->
-		<div class="ui grid stackable container award-holder">
-			<div class="twelve wide column">
-				<h1 class="award-header">Top Design Thinker</h1>
-				<h2>John Ingrum - Design Thinking Teacher | DT Course</h2>
-				<p>Best application of good design and user experience Placed top out of 30 students</p>
+			<!-- Google -->
+			<div class="temp-background">
+				<div class="ui equal width grid stackable container award-holder">
+					<div class="twelve wide column">
+						<h1 class="award-header">Most Dedicated & Youngest Programmer</h1>
+						<h2>Karl Mehta - CEO of EdCast | Google Hackathon</h2>
+						<p>Created a simple SMS/Web application that helps prevent malnourishment and starvation in India.
+						Used medical information to add specific fruits and vegetables to their diet in order to combat malnourishment. Used historical data provided by teachers to predict attendance at school.</p>
+					</div>
+					<div class="column four wide right aligned">
+						<h1 class="award-header">August 2015</h1>
+					</div>
+				</div>
 			</div>
-			<div class="four wide column right aligned">
-				<h1 class="award-header">Winter 2015</h1>
-			</div>
-		</div>
 
-		<!-- CodeDay -->
-		<div class="temp-background">
-			<div class="ui equal width grid stackable container award-holder">
+			<!-- Design Thinker -->
+			<div class="ui grid stackable container award-holder">
 				<div class="twelve wide column">
-					<h1 class="award-header">0-60 | Best Beginner Project</h1>
-					<h2>Justin Brezhnev - CodeDayLA Host</h2>
-					<p>Created a web application that saves the user’s parked car’s location. Never forget where you parked again.</p>
+					<h1 class="award-header">Top Design Thinker</h1>
+					<h2>John Ingrum - Design Thinking Teacher | DT Course</h2>
+					<p>Best application of good design and user experience Placed top out of 30 students</p>
 				</div>
-				<div class="column four wide right aligned">
-					<h1 class="award-header">Spring 2015</h1>
+				<div class="four wide column right aligned">
+					<h1 class="award-header">Winter 2015</h1>
 				</div>
 			</div>
-		</div>
-		
-	</section>
+
+			<!-- CodeDay -->
+			<div class="temp-background">
+				<div class="ui equal width grid stackable container award-holder">
+					<div class="twelve wide column">
+						<h1 class="award-header">0-60 | Best Beginner Project</h1>
+						<h2>Justin Brezhnev - CodeDayLA Host</h2>
+						<p>Created a web application that saves the user’s parked car’s location. Never forget where you parked again.</p>
+					</div>
+					<div class="column four wide right aligned">
+						<h1 class="award-header">Spring 2015</h1>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+	</div>
 
 </body>
