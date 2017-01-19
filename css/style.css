@@ -167,6 +167,7 @@ a:hover {
 .footer-text {
 	font-size: 1.2rem !important;
 	color: black !important;
+	text-align: center !important;
 }
 
 @media only screen and (max-width: 500px) {
