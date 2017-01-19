@@ -18,6 +18,10 @@
 	font-size: 3rem !important;
 }
 
+.sub-description-holder {
+	margin-top: -5px !important;
+}
+
 .award-background {
 	background: #8a8a8a !important;
 	color: white;
@@ -37,8 +41,8 @@
 }
 
 .section-holder {
-	padding-top: 25px !important;
-	padding-bottom: 40px !important;
+	padding-top: 27px !important;
+	padding-bottom: 50px !important;
 }
 
 .no-border-view {
