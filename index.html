@@ -10,331 +10,366 @@
 	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" type="text/css" href="animate.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="semantic.css">
-	<link rel="stylesheet" type="text/css" href="semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
 	
 	<script
 	src="https://code.jquery.com/jquery-3.1.1.min.js"
 	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	crossorigin="anonymous"></script>
 
-	<script src="semantic.min.js"></script>
-	<script src="script.js"></script>
+	<script src="js/semantic.min.js"></script>
+	<script src="js/index.js"></script>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-83718909-2', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 </head>
 
 <body>
 
-	<!-- Header -->
-	<section class="ui center aligned segment header-holder no-border-view fadeInDown animated" id="header">
+	<div class="ui left vertical inverted sidebar labeled icon menu side-nav-bar">
+	  <a class="item active">
+	    <i class="home icon"></i>
+	    Home
+	  </a>
+	  <a class="item" href="projects.html">
+	    <i class="block layout icon"></i>
+	    Projects & <br> Experience
+	  </a>
+	  <a class="item" href="awards.html">
+	    <i class="trophy icon"></i>
+	    Awards
+	  </a>
+	</div>
 
-		<h1 class="header-hello-large-text">Hello, I'm</h1>
-		<h1 class="header-name-large-text">Justin Punzalan.</h1>
-
-
-		<h3 class="header-description-text">FRONTEND WEB DEVELOPER | SOFTWARE ENGINEER</h3>
-
-		<br>
-
-		<div class="ui horizontal bulleted link list header-list-text grey-text">
-			<a class="item scroll" target="who-am-i">What I Do</a>
-			<a class="item scroll" target="skills">How I Shine</a>
-			<a class="item scroll" target="bio">Who I Am</a>
-			<a class="item scroll" target="resume">Where to Find Me</a>
+	<div class="ui sticky nav-margin" id="sticky">
+		<div class="ui animated large button black" tabindex="0" onclick="toggleSideNav()">
+		  <div class="hidden content">Menu</div>
+		  <div class="visible content">
+		   <i class="content icon"></i>
+		  </div>
 		</div>
-		
-		<br>
+	</div>
+	
+	<div class="pusher">
+		<!-- Header -->
+		<section class="ui center aligned segment header-home-holder no-border-view fadeInDown animated" id="header">
 
-		<a class="lower-button scroll" target="who-am-i"><i class="huge double angle down icon lower-button"></i></a>
-		
+			<h1 class="header-hello-large-text">Hello, I'm</h1>
+			<h1 class="header-name-large-text">Justin Punzalan.</h1>
 
-	</section>
 
-	<!-- Who I Am -->
-	<section id="who-am-i" class="ui center aligned segment no-border-view temp-background">
+			<h3 class="header-description-text">FRONTEND WEB DEVELOPER | SOFTWARE ENGINEER</h3>
 
-		<h1 class="section-header">What I Do</h1>
+			<br>
 
-		<div class="ui stackable equal width grid container">
-			<div class="column">
-				<div class="ui link cards centered">	
-					<div class="card" id="card-robot">
-						<div class="image">
-							<img src="http://www.freevectors.net/files/large/FlatBlueRobotVectorIllustration.jpg">
-						</div>
-						<div class="content ui left aligned">
-							<div class="header">FIRST Robotics Mentor</div>
-							<div class="meta">
-								<a>Team 4 ELEMENT</a>
-							</div>
-							<div class="description">
-								Designed a programming curriculum to teach programming to interested high school students. Implemented PID Control Loops, Vision Tracking and Motion Profiling.
-							</div>
-						</div>
-						<div class="extra content">
-							<span class="right floated">
-								Joined in 2015
-							</span>
-							<span>
-								<i class="marker icon"></i>
-								Van Nuys
-							</span>
-						</div>
-					</div>
-				</div>
+			<div class="ui horizontal bulleted link list header-list-text grey-text">
+				<a class="item scroll" target="who-am-i">What I Do</a>
+				<a class="item scroll" target="skills">How I Shine</a>
+				<a class="item scroll" target="bio">Who I Am</a>
+				<a class="item scroll" target="resume">Where to Find Me</a>
 			</div>
+			
+			<br>
 
-			<div class="column">
-				<div class="ui link cards centered">	
-					<div class="card" id="card-web">
-						<div class="image">
-							<img src="http://cache2.asset-cache.net/xc/485116622.jpg?v=2&c=IWSAsset&k=2&d=fe6KlDvUxA5-joS8vpa38aqSEHc4JacgMc10qdqFSaWfK1xtetUT_yUyEanznjHD0" height="120%">
-						</div>
-						<div class="content ui left aligned">
-							<div class="header">Web Developer</div>
-							<div class="meta">
-								<span class="date">Recent - TakeSessions</span>
-							</div>
-							<div class="description">
-								Designed a programming curriculum to teach programming to interested high school students. Implemented PID Control Loops, Vision Tracking and Motion Profiling.
-							</div>
-						</div>
-						<div class="extra content">
-							<span class="right floated">
-								Started in 2015
-							</span>
-							<span>
-								<i class="user icon"></i>
-								Front End
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
+			<a class="lower-button scroll" target="who-am-i"><i class="huge double angle down icon lower-button"></i></a>
+			
 
-			<div class="column">
-				<div class="ui link cards centered">	
-					<div class="card" id="card-hack">
-						<div class="image">
-							<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/mlh-profile_image-8393427ef5db952e-300x300.png">
-						</div>
-						<div class="content ui left aligned">
-							<div class="header">Frequent Hackathon Attendee</div>
-							<div class="meta">
-								<a>7 Hackathons Attended</a>
+		</section>
+
+		<!-- Who I Am -->
+		<section id="who-am-i" class="ui center aligned segment no-border-view temp-background">
+
+			<h1 class="section-header">What I Do</h1>
+
+			<div class="ui stackable equal width grid container">
+				<div class="column">
+					<div class="ui link cards centered">	
+						<div class="card" id="card-robot">
+							<div class="image">
+								<img src="http://www.freevectors.net/files/large/FlatBlueRobotVectorIllustration.jpg">
 							</div>
-							<div class="description">
-								Designed a programming curriculum to teach programming to interested high school students. Implemented PID Control Loops, Vision Tracking and Motion Profiling.
+							<div class="content ui left aligned">
+								<div class="header">FIRST Robotics Mentor</div>
+								<div class="meta">
+									<a>Team 4 ELEMENT</a>
+								</div>
+								<div class="description">
+									Designed a programming curriculum to teach programming to interested high school students. Implemented PID Control Loops, Vision Tracking and Motion Profiling.
+								</div>
+							</div>
+							<div class="extra content">
+								<span class="right floated">
+									Joined in 2015
+								</span>
+								<span>
+									<i class="marker icon"></i>
+									Van Nuys
+								</span>
 							</div>
 						</div>
-						<div class="extra content">
-							<span class="right floated">
-								Competing since 2015
-							</span>
-							<span>
-								<i class="trophy icon"></i>
-								3 Awards
-							</span>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="ui link cards centered">	
+						<div class="card" id="card-web">
+							<div class="image">
+								<img src="http://cache2.asset-cache.net/xc/485116622.jpg?v=2&c=IWSAsset&k=2&d=fe6KlDvUxA5-joS8vpa38aqSEHc4JacgMc10qdqFSaWfK1xtetUT_yUyEanznjHD0" height="120%">
+							</div>
+							<div class="content ui left aligned">
+								<div class="header">Web Developer</div>
+								<div class="meta">
+									<span class="date">Recent - TakeSessions</span>
+								</div>
+								<div class="description">
+									Proficient in front-end web development. Beginner back-end developer. Skillset includes HTML, CSS, JS, Emberjs and bootstrap along with other boilerplates. Also knowledgeable in SQL and Expressjs.
+								</div>
+							</div>
+							<div class="extra content">
+								<span class="right floated">
+									Started in 2015
+								</span>
+								<span>
+									<i class="user icon"></i>
+									Front End
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="ui link cards centered">	
+						<div class="card" id="card-hack">
+							<div class="image">
+								<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/mlh-profile_image-8393427ef5db952e-300x300.png">
+							</div>
+							<div class="content ui left aligned">
+								<div class="header">Frequent Hackathon Attendee</div>
+								<div class="meta">
+									<a>6 Hackathons Attended</a>
+								</div>
+								<div class="description">
+									Avid hackathon participant. Won 3 out of 6 competitions attended. Main goal is to learn new things and meet new awesome people. Hit me up if you need a teammate. Attending LAHacks in the Spring. 
+								</div>
+							</div>
+							<div class="extra content">
+								<span class="right floated">
+									Competing since 2015
+								</span>
+								<span>
+									<i class="trophy icon"></i>
+									3 Awards
+								</span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<br>
-		<br>
+			<br>
+			<br>
 
-	</section>
+		</section>
 
-	<!-- Skills -->
-	<section class="ui center aligned segment no-border-view" id="skills">
+		<!-- Skills -->
+		<section class="ui center aligned segment no-border-view" id="skills">
 
-		<h1 class="section-header">Skills</h1>
+			<h1 class="section-header">Skills</h1>
 
-		<div class="ui stackable two column grid container">
-			<div class="column">
+			<div class="ui stackable two column grid container">
+				<div class="column">
 
-				<!-- HTML -->
-				<div class="ui grid">
-					<div class="four wide column">
-						HTML
-					</div>
+					<!-- HTML -->
+					<div class="ui grid">
+						<div class="four wide column">
+							HTML
+						</div>
 
-					<div class="twelve wide column">
-						<div class="ui red active progress" data-percent="99" id="skill-html">
-							<div class="bar"></div>
+						<div class="twelve wide column">
+							<div class="ui red active progress" data-percent="99" id="skill-html">
+								<div class="bar"></div>
+							</div>
 						</div>
 					</div>
+
+					<!-- Java -->
+					<div class="ui grid">
+						<div class="four wide column">
+							Java
+						</div>
+
+						<div class="twelve wide column">
+							<div class="ui purple active progress" data-percent="65" id="skill-java">
+								<div class="bar"></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Photoshop -->
+					<div class="ui grid">
+						<div class="four wide column">
+							Photoshop
+						</div>
+
+						<div class="twelve wide column">
+							<div class="ui violet active progress" data-percent="50" id="skill-photoshop">
+								<div class="bar"></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- CSS -->
+					<div class="ui grid">
+						<div class="four wide column">
+							CSS
+						</div>
+
+						<div class="twelve wide column">
+							<div class="ui blue active progress" data-percent="45" id="skill-css">
+								<div class="bar"></div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 
-				<!-- Java -->
-				<div class="ui grid">
-					<div class="four wide column">
-						Java
-					</div>
+				<div class="column">
+					<!-- Javascript -->
+					<div class="ui grid">
+						<div class="four wide column">
+							Javascript
+						</div>
 
-					<div class="twelve wide column">
-						<div class="ui purple active progress" data-percent="65" id="skill-java">
-							<div class="bar"></div>
+						<div class="twelve wide column">
+							<div class="ui green active progress" data-percent="85" id="skill-js">
+								<div class="bar"></div>
+							</div>
 						</div>
 					</div>
+
+					<!-- Emberjs -->
+					<div class="ui grid">
+						<div class="four wide column">
+							Emberjs
+						</div>
+
+						<div class="twelve wide column">
+							<div class="ui orange active progress" data-percent="65" id="skill-emberjs">
+								<div class="bar"></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- VBA -->
+					<div class="ui grid">
+						<div class="four wide column">
+							Visual Basic
+						</div>
+
+						<div class="twelve wide column">
+							<div class="ui pink active progress" data-percent="45" id="skill-vba">
+								<div class="bar"></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Linux -->
+					<div class="ui grid">
+						<div class="four wide column">
+							Linux
+						</div>
+
+						<div class="twelve wide column">
+							<div class="ui black active progress" data-percent="30" id="skill-linux">
+								<div class="bar"></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>		
+
+			<br>
+		</section>
+
+		<!-- About -->
+		<section class="ui center aligned segment no-border-view temp-background no-bottom-padding-margin" id="bio">
+
+			<h1 class="section-header">About Me</h1>
+
+			<div class="ui stackable column grid container">
+
+				<div class="four wide column">
+					<img class="ui medium circular centered image" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12705613_1130747370293328_530267117174938933_n.jpg?oh=e3ae76f81a8450ef24d1bcfced755fea&oe=58E4311D">
 				</div>
 
-				<!-- Photoshop -->
-				<div class="ui grid">
-					<div class="four wide column">
-						Photoshop
-					</div>
-
-					<div class="twelve wide column">
-						<div class="ui violet active progress" data-percent="50" id="skill-photoshop">
-							<div class="bar"></div>
-						</div>
-					</div>
-				</div>
-
-				<!-- CSS -->
-				<div class="ui grid">
-					<div class="four wide column">
-						CSS
-					</div>
-
-					<div class="twelve wide column">
-						<div class="ui blue active progress" data-percent="45" id="skill-css">
-							<div class="bar"></div>
-						</div>
+				<div class="twelve wide column">
+					<div class="ui container left aligned">
+						<p class="bio-text">Greetings and salutations! My name is Justin Punzalan and I just want to become the best developer I possibly can be. I attempt to reach this goal through internships, work, and side projects. You'll often find me creating websites, robots, and even AI chatbots. In other words, I'm a fast learning developer with a passion for creating awesome and amazing things!</p>
 					</div>
 				</div>
 
 			</div>
 
-			<div class="column">
-				<!-- Javascript -->
-				<div class="ui grid">
-					<div class="four wide column">
-						Javascript
-					</div>
+			<br>
+			<br>
+			<br>
+		</section>
 
-					<div class="twelve wide column">
-						<div class="ui green active progress" data-percent="85" id="skill-js">
-							<div class="bar"></div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Emberjs -->
-				<div class="ui grid">
-					<div class="four wide column">
-						Emberjs
-					</div>
-
-					<div class="twelve wide column">
-						<div class="ui orange active progress" data-percent="65" id="skill-emberjs">
-							<div class="bar"></div>
-						</div>
-					</div>
-				</div>
-
-				<!-- VBA -->
-				<div class="ui grid">
-					<div class="four wide column">
-						Visual Basic
-					</div>
-
-					<div class="twelve wide column">
-						<div class="ui pink active progress" data-percent="45" id="skill-vba">
-							<div class="bar"></div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Linux -->
-				<div class="ui grid">
-					<div class="four wide column">
-						Linux
-					</div>
-
-					<div class="twelve wide column">
-						<div class="ui black active progress" data-percent="30" id="skill-linux">
-							<div class="bar"></div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>		
-
-		<br>
-	</section>
-
-	<!-- About -->
-	<section class="ui center aligned segment no-border-view temp-background no-bottom-padding-margin" id="bio">
-
-		<h1 class="section-header">About Me</h1>
-
-		<div class="ui stackable column grid container">
-
-			<div class="four wide column">
-				<img class="ui medium circular image" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12705613_1130747370293328_530267117174938933_n.jpg?oh=e3ae76f81a8450ef24d1bcfced755fea&oe=58E4311D">
-			</div>
-
-			<div class="twelve wide column">
-				<div class="ui container left aligned">
-					<p class="bio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-			</div>
-
-		</div>
-
-		<br>
-		<br>
-		<br>
-	</section>
-
-	<!-- Resume/Contact -->
-	<section class="ui center aligned segment no-border-view no-top-padding-margin no-bottom-padding-margin no-padding-mobile">
-		<div class="ui equal width grid stackable">
-			<div class="column blue" id="resume">
-				<h1 class="contact-header">My Resume</h1>
-				<br>
-				<div class="ui icon button">
-					<a href="Punzalan_Justin_Resume_2016.pdf" download><i class="massive download icon"></i></a>
-				</div>
-				<h2 class="resume-text-padding " style="padding-left: 8rem; padding-right: 8rem;">
-					Want to know even more about me? Check out my resume or shoot me an email.
-				</h2>
-			</div>
-			<div class="column grey" id="contact">
-				<h1 class="contact-header">Contact Me</h1>
-				<br>
-				<form class="ui form" method="POST" action="https://formspree.io/justpunz@live.com">
-					<div class="no-center">
-						<div class="ui fluid big icon input field">
-						  <input id="field-name" type="text" placeholder="Your Name" required>
-						  <i class="student icon"></i>
-						</div>
-						<div class="ui fluid big icon input field">
-						  <input type="email" name="email" placeholder="Your email" required>
-						  <i class="mail icon"></i>
-						</div>
-						<div class="ui fluid big icon input field">
-							<i class="write icon"></i>
-							<textarea rows="2" name="message" placeholder="Your message." required></textarea>
-						</div>
-					</div>
+		<!-- Resume/Contact -->
+		<section class="ui center aligned segment no-border-view no-top-padding-margin no-bottom-padding-margin no-padding-mobile">
+			<div class="ui equal width grid stackable">
+				<div class="column blue" id="resume">
+					<h1 class="contact-header">My Resume</h1>
 					<br>
-					<button class="ui button large" type="submit">Submit</button>
-				</form>
+					<div class="ui icon button">
+						<a href="Punzalan_Justin_Resume_2016.pdf" download><i class="massive download icon"></i></a>
+					</div>
+					<h2 class="resume-text-padding " style="padding-left: 8rem; padding-right: 8rem; font-weight: normal;">
+						Want to know even more about me? Check out my resume or shoot me an email.
+					</h2>
+				</div>
+				<div class="column grey" id="contact">
+					<h1 class="contact-header">Contact Me</h1>
+					<br>
+					<form class="ui form" method="POST" action="https://formspree.io/justpunz@live.com" target="_blank">
+						<div class="no-center">
+							<div class="ui fluid big icon input field" id="field-name-div">
+							  <input id="field-name" type="text" name="name" placeholder="Your Name" required>
+							  <i class="student icon"></i>
+							</div>
+							<div class="ui fluid big icon input field" id="field-email-div">
+							  <input type="email" name="email" placeholder="Your email" required>
+							  <i class="mail icon"></i>
+							</div>
+							<div class="ui fluid big icon input field" id="field-message-div">
+								<i class="write icon"></i>
+								<textarea rows="2" name="message" placeholder="Your message." required></textarea>
+							</div>
+						</div>
+						<br>
+						<button class="ui toggle button large" type="submit" onclick="toggleButton()">Submit</button>
+					</form>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<!-- Footer -->
-	<section class="ui center aligned segment no-border-view footer-background">
-		<p class="footer-text">Designed and developed by Justin Punzalan © 2017</p>
-		<a href="https://github.com/justAdevTV" target="_blank"><i class="big github icon"></i></a>
-		<a href="#"><i class="big linkedin square icon"></i></a>
-	</section>
-
+		<!-- Footer -->
+		<section class="ui center aligned segment no-border-view footer-background" id="footer">
+			<p class="footer-text">Designed and developed by Justin Punzalan © 2017</p>
+			<a href="https://github.com/justAdevTV" target="_blank"><i class="big github icon"></i></a>
+			<a href="https://www.linkedin.com/in/justin-punz" target="_blank"><i class="big linkedin square icon"></i></a>
+		</section>
+	</div>
 </body>
