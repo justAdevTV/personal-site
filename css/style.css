@@ -6,6 +6,10 @@
 	margin-top: 35px;
 }
 
+.title-holder {
+	padding-top: 15px;
+}
+
 .award-header {
 	font-size: 3rem;
 }
@@ -25,6 +29,10 @@
 	border: 0px !important;
 	margin-bottom: 0px !important;
 	margin-top: 0px !important;
+}
+
+.current-holder {
+	margin-top: 10px;
 }
 
 .header-text {
