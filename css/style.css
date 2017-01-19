@@ -14,6 +14,10 @@
 	font-size: 3rem;
 }
 
+.project-header {
+	font-size: 3rem !important;
+}
+
 .award-background {
 	background: #8a8a8a !important;
 	color: white;
@@ -22,6 +26,19 @@
 .award-holder{
 	padding-top: 20px !important;
 	padding-bottom: 50px !important;
+}
+
+.project-holder {
+	padding-top: 5px !important;
+}
+
+.big-header {
+	font-size: 4rem;
+}
+
+.section-holder {
+	padding-top: 25px !important;
+	padding-bottom: 40px !important;
 }
 
 .no-border-view {
