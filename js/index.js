@@ -15,24 +15,17 @@ $( document ).ready(function() {
 		context: '#footer'
 	});
 
-	$('.ui.button.toggle').state({
-    	text: {
-        	inactive : 'Submit',
-        	active   : 'Submitted'
-      	}
-    });
-
     $('.scroll').click(function() {
 	    $('body').animate({
 	        scrollTop: eval($('#' + $(this).attr('target')).offset().top)
 
 	    }, 1000);
 
-	   	if ($(this).attr('target') === 'resume') {
+	   	if ($(thisattr('target') === 'resume')) {
 	        $('#field-name').focus();
 	        setTimeout(function(){
 		        $('#field-name').transition('tada');
-	        }, 500)
+	        }, 500);
 	    }
 	});
 
@@ -81,6 +74,9 @@ function toggleButton() {
 	    $('#field-email-div').removeClass('disabled');
 	    $('#field-message-div').removeClass('disabled');
 
+	    $('#toggle-button').removeClass('active');
+	    $('#toggle-button').text('Submit');
+
 	    isSubmitted = false;
 
 	} else if (formData[0].value != '' && (validateEmail(formData[1].value)) && formData[2].value != '') {
@@ -88,6 +84,9 @@ function toggleButton() {
  		$('#field-name-div').addClass('disabled');
 	    $('#field-email-div').addClass('disabled');
 	    $('#field-message-div').addClass('disabled');
+
+	    $('#toggle-button').addClass('active');
+	    $('#toggle-button').text('Submitted');
 
 		isSubmitted = true;
 
